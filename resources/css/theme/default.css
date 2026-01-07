@@ -1,0 +1,10 @@
+@theme inline {
+  --color-background: #ffffff;
+  --color-primary: #ff8b02;
+  --color-secondary: #6ce369;
+  --color-tertiary: #bac4ce;
+
+  /* Typography */
+  --font-sans: "Titillium Web", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}

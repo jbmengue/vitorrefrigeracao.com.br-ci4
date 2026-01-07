@@ -1,0 +1,12 @@
+@layer components {
+  .layout-container {
+    @apply mx-auto px-6 2xl:px-0 2xl:max-w-[1280px];
+
+    &.wide {
+      @apply 2xl:max-w-[1536px];
+    }
+    &.full {
+      @apply !max-w-full;
+    }
+  }
+}

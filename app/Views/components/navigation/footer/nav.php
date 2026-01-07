@@ -1,0 +1,24 @@
+<div class="layout-container wide">
+  <nav class="flex flex-col lg:flex-row justify-between">
+    <ul class="text-center lg:text-start">
+      <?php component("items", ['only' => ['technical-assistance', 'contracts', 'installations', 'cleaning'], 'order' => ['technical-assistance', 'contracts'], 'navItemClass' => 'mb-5', 'navLinkClass' => 'font-bold'], 'navigation') ?>
+    </ul>
+    <ul class="text-center lg:text-start">
+      <?php component("items", ['only' => ['authorized'], 'navItemClass' => 'mb-5', 'navLinkClass' => 'font-bold'], 'navigation') ?>
+    </ul>
+    <ul class="text-center lg:text-start">
+      <?php component("items", ['only' => ['gas-heaters', 'commercial-refrigeration-gastronomy-equipment', 'gondolas', 'vrf', 'tailor-made-commercial-projects', 'equipment-rental'], 'navItemClass' => 'mb-5', 'navLinkClass' => 'font-bold'], 'navigation') ?>
+      <li>
+        <strong>Siga-nos nas redes</strong>
+        <div class="flex gap-x-3 mt-5">
+          <a href="<?= config(\Config\App::class)->instagram ?>" target="_blank">
+            <img alt="<?= config(\Config\App::class)->name ?>: Instagram" title="" src="<?= assets('images', 'svg/social-networks/instagram.svg') ?>" width="55" height="55" />
+          </a>
+          <a href="<?= config(\Config\App::class)->facebook ?>" target="_blank">
+            <img alt="<?= config(\Config\App::class)->name ?>: Facebook" title="" src="<?= assets('images', 'svg/social-networks/facebook.svg') ?>" width="55" height="55" />
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>

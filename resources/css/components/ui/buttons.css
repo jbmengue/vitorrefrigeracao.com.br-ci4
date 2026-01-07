@@ -1,0 +1,53 @@
+@layer components {
+  :where([class^="btn-"], [class*=" btn-"]) {
+    @apply flex items-center justify-center gap-2;
+    @apply whitespace-nowrap select-none;
+    @apply text-sm font-bold uppercase leading-none;
+    @apply rounded-xl;
+    @apply px-5 py-3;
+    @apply transition-all duration-200;
+    @apply outline-none;
+    @apply focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-white;
+    @apply disabled:opacity-50 disabled:pointer-events-none;
+    @apply hover:scale-105;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-gray-900 hover:bg-primary;
+  }
+  .btn-secondary {
+    @apply bg-secondary text-gray-900;
+  }
+
+  .btn-dark { @apply bg-black text-white }
+
+  .btn-sm {
+    @apply px-4 text-sm rounded-md;
+
+    i[class^="flaticon-"]:before,
+    i[class*=" flaticon-"]:before {
+      @apply text-xl;
+    }
+  }
+  .btn-md {
+    @apply px-6 text-base rounded-lg;
+
+    i[class^="flaticon-"]:before,
+    i[class*=" flaticon-"]:before {
+      @apply text-2xl;
+    }
+  }
+  .btn-lg {
+    @apply px-8 py-5 text-2xl rounded-xl;
+
+    i[class^="flaticon-"]:before,
+    i[class*=" flaticon-"]:before {
+      @apply text-4xl;
+    }
+  }
+
+  i[class^="flaticon-"]:before,
+  i[class*=" flaticon-"]:before {
+    @apply me-3;
+  }
+}

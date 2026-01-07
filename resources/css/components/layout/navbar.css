@@ -1,0 +1,31 @@
+#navbarOffcanvas {
+  @apply max-xl:overflow-y-scroll max-xl:overflow-hidden;
+
+  .nav-item {
+    @apply relative max-xl:text-xl max-xl:my-5;
+
+    &:hover {
+      .nav-submenu {
+        @apply max-h-[2000px] xl:w-[300px] opacity-100 translate-y-0 overflow-visible border-b-3 border-primary;
+      }
+      &.has-children {
+        @apply before:transform-[rotate(0deg)] before:-top-2
+      }
+    }
+
+    &.has-children {
+      @apply ps-3 max-xl:-ms-3;
+      @apply before:transition-all before:content-['\203A'] before:inline-block before:transform-[rotate(90deg)] before:text-3xl before:absolute before:left-0 before:-top-[5px];
+    }
+  }
+  .nav-submenu {
+    @apply relative xl:absolute w-[350px] -left-1 text-start xl:bg-gray-50 xl:shadow;
+    @apply overflow-hidden xl:max-h-0 xl:opacity-0 xl:-translate-y-2 transition-all duration-300;
+
+    .nav-subitem {
+      .nav-sublink {
+        @apply max-xl:text-xl xl:text-sm py-3 px-4 block hover:bg-primary/10 hover:scale-103 duration-300 transition-all;
+      }
+    }
+  }
+}

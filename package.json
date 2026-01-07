@@ -1,0 +1,59 @@
+{
+  "name": "denisehabitante.com.br",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts,.tsx --max-warnings=0",
+    "lint:fix": "yarn lint --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbmengue/denisehabitante.com.br.git"
+  },
+  "author": "Agência Millenium - https://www.agencia-millenium.com/",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbmengue/denisehabitante.com.br/issues"
+  },
+  "homepage": "https://github.com/jbmengue/denisehabitante.com.br#readme",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.24.0",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/aos": "^3.0.7",
+    "@types/node": "^24.8.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@typescript-eslint/eslint-plugin": "^8.46.1",
+    "@typescript-eslint/parser": "^8.46.1",
+    "@vitejs/plugin-react": "^5.1.2",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-perfectionist": "^4.15.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.1",
+    "vite": "^7.1.10"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "^3.36.1",
+    "aos": "^2.3.4",
+    "axios": "^1.13.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "swiper": "^12.0.3"
+  }
+}

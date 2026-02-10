@@ -9,7 +9,6 @@ import mountIslands from '@/shared/utils/mountIslands';
 const OffcanvasMenu = React.lazy(() => import('@/components/layout/OffcanvasMenu'));
 const ServicesSlider = React.lazy(() => import('@/components/layout/ServicesSlider'));
 const TestimonialSlider = React.lazy(() => import('@/components/layout/TestimonialsSlider'));
-
 AOS.init({
   duration: 700,
   easing: 'ease-out',

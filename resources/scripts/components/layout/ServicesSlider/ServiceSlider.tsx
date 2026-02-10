@@ -82,7 +82,7 @@ const ServicesSlider = () => {
         {services.map((service) => {
           return (
             <SwiperSlide key={service.id} className="!h-auto">
-              <div className="relative h-full w-full rounded-2xl bg-white/50 px-8 pt-6 pb-20 shadow-[-4px_-5px_9px_rgba(0,0,0,0.15)]">
+              <div className="relative h-full w-full rounded-2xl bg-white/50 px-8 pt-6 pb-20 shadow-[-4px_-5px_9px_rgba(0,0,0,0.15)] transition-transform duration-700 hover:scale-102">
                 <img
                   alt={`Serviços: ${service.title}`}
                   title={`Serviços: ${service.title}`}

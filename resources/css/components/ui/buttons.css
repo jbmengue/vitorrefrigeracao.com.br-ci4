@@ -1,25 +1,26 @@
 @layer components {
   :where([class^="btn-"], [class*=" btn-"]) {
-    @apply flex items-center justify-center gap-2;
+    @apply flex items-center justify-center gap-2 relative overflow-hidden;
     @apply whitespace-nowrap select-none;
     @apply text-sm font-bold uppercase leading-none;
     @apply rounded-xl;
     @apply px-5 py-3;
-    @apply transition-all duration-200;
+    @apply !transition-transform !duration-300;
     @apply outline-none;
     @apply focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-white;
     @apply disabled:opacity-50 disabled:pointer-events-none;
-    @apply hover:scale-105;
+    @apply hover:scale-105 hover:before:left-0 hover:!text-white;
+    @apply before:content-[''] before:absolute before:-left-[100%] before:top-0 before:w-[100%] before:h-[100%] before:transition-all before:duration-800 before:bg-black before:-z-10;
   }
 
   .btn-primary {
-    @apply bg-primary text-gray-900 hover:bg-primary;
+    @apply bg-primary text-gray-900 hover:bg-primary before:bg-black;
   }
   .btn-secondary {
     @apply bg-secondary text-gray-900;
   }
 
-  .btn-dark { @apply bg-black text-white }
+  .btn-dark { @apply bg-black text-white before:bg-primary hover:!text-black; }
 
   .btn-sm {
     @apply px-4 text-sm rounded-md;

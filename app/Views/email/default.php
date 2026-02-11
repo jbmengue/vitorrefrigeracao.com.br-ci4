@@ -25,7 +25,7 @@
         <tr>
             <td width="140" height="146" bgcolor="#EEEEEE"></td>
             <td width="522" height="147" colspan="3" rowspan="2" bgcolor="#EEEEEE" style="padding: 40px 0 20px;vertical-align: top; text-align:center;">
-                <small style="color:#8ea2a4;">© <?= config(\Config\App::class)->name .
+                <small style="color:#8ea2a4;">© <?= $appConfig->name .
                   " " .
                   date("Y") ?> - Todos os direitos reservados</small>
             </td>

@@ -10,12 +10,12 @@
       <?php component("items", ['only' => ['gas-heaters', 'commercial-refrigeration-gastronomy-equipment', 'gondolas', 'vrf', 'tailor-made-commercial-projects', 'equipment-rental'], 'navItemClass' => 'mb-5', 'navLinkClass' => 'font-bold'], 'navigation') ?>
       <li>
         <strong>Siga-nos nas redes</strong>
-        <div class="flex gap-x-3 mt-5">
-          <a href="<?= config(\Config\App::class)->instagram ?>" target="_blank">
-            <img alt="<?= config(\Config\App::class)->name ?>: Instagram" title="" src="<?= assets('images', 'svg/social-networks/instagram.svg') ?>" width="55" height="55" />
+        <div class="flex justify-center lg:justify-start gap-x-3 mt-5">
+          <a href="<?= $appConfig->instagram ?>" target="_blank">
+            <img alt="<?= $appConfig->name ?>: Instagram" title="" src="<?= assets('images', 'svg/social-networks/instagram.svg') ?>" width="55" height="55" />
           </a>
-          <a href="<?= config(\Config\App::class)->facebook ?>" target="_blank">
-            <img alt="<?= config(\Config\App::class)->name ?>: Facebook" title="" src="<?= assets('images', 'svg/social-networks/facebook.svg') ?>" width="55" height="55" />
+          <a href="<?= $appConfig->facebook ?>" target="_blank">
+            <img alt="<?= $appConfig->name ?>: Facebook" title="" src="<?= assets('images', 'svg/social-networks/facebook.svg') ?>" width="55" height="55" />
           </a>
         </div>
       </li>

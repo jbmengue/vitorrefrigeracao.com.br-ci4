@@ -45,7 +45,7 @@ abstract class BaseController extends Controller
 
   protected array $data = [];
   protected string $contentView = 'layouts/content';
-
+  protected \Config\App $appConfig;
 
   /**
    * @return void
@@ -57,7 +57,8 @@ abstract class BaseController extends Controller
   ) {
     // Do Not Edit This Line
     parent::initController($request, $response, $logger);
-
+    $this->appConfig = appConfig();
+    service('renderer')->setVar('appConfig', $this->appConfig); 
     // Preload any models, libraries, etc, here.
 
     // E.g.: $this->session = service('session');

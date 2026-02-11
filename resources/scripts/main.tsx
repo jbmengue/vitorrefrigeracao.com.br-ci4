@@ -10,11 +10,10 @@ const OffcanvasMenu = React.lazy(() => import('@/components/layout/OffcanvasMenu
 const ServicesSlider = React.lazy(() => import('@/components/layout/ServicesSlider'));
 const TestimonialSlider = React.lazy(() => import('@/components/layout/TestimonialsSlider'));
 AOS.init({
-  duration: 700,
+  duration: 500,
   easing: 'ease-out',
   once: true,
   offset: 80,
-  disableMutationObserver: false,
 });
 
 mountIslands([

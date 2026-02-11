@@ -1,13 +1,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title><?= isset($metaTitle) ? $metaTitle : config(\Config\App::class)->title ?></title>
+<title><?= isset($metaTitle) ? $metaTitle : $appConfig->title ?></title>
 <meta name="theme-color" content="#000000" />
 <meta name="robots" content="index,follow">
 <meta name="description" content="<?= isset($metaDescription)
   ? $metaDescription
-  : config(\Config\App::class)->description ?>">
-<meta name="copyright" content="&copy; <?= config(\Config\App::class)->name .
+  : $appConfig->description ?>">
+<meta name="copyright" content="&copy; <?= $appConfig->name .
   " " .
   date("Y") ?> - Todos os direiros reservados">
 <meta name="distribution" content="Global">
@@ -20,8 +20,8 @@
 <meta property="og:url" content="<?= base_url() ?>">
 <meta property="og:title" content="<?= isset($metaTitle)
   ? $metaTitle
-  : config(\Config\App::class)->name ?>">
-<meta property="og:site_name" content="<?= config(\Config\App::class)->name ?>">
+  : $appConfig->name ?>">
+<meta property="og:site_name" content="<?= $appConfig->name ?>">
 <meta property="og:description" content="<?= isset($metaDescription) ? $metaDescription : "" ?>">
 <meta property="og:image" content="">
 <meta property="og:image:type" content="image/jpeg">
@@ -30,4 +30,3 @@
 
 <?php
 layout_snippet(['typography', 'scripts-head']);
-

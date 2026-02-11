@@ -29,6 +29,12 @@ class App extends BaseConfig
   public string $twitter = "";
   public string $youtube = "";
   public string $linkedin = "";
+  public string $openTicketLink = "";
+  public string $openSalesOrdersLink = "";
+  public string $openQuotesLink = "";
+  public string $serviceHoursWeek = "";
+  public string $serviceHoursSaturday = "";
+  public string $serviceHoursCompact = "";
 
   public string $images = "";
   public string $upload = "";

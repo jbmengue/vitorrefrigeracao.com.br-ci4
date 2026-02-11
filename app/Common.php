@@ -13,3 +13,11 @@
  *
  * @see: https://codeigniter.com/user_guide/extending/common.html
  */
+if (! function_exists('appConfig')) {
+    function appConfig(): \Config\App
+    {
+        static $appConfig;
+
+        return $appConfig ??= config(\Config\App::class);
+    }
+}

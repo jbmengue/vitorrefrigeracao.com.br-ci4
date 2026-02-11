@@ -2,8 +2,8 @@
   <div class="lg:w-5/12">
     <h1 class="normal-case text-center md:text-start" data-aos="fade-down">Mais de 40 anos de história</h1>
     <div class="text-justify text-lg" data-aos="zoom-in" data-aos-delay="500">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+      <p>Desde 1983, a Vitor Refrigeração atua com excelência em climatização e refrigeração, oferecendo soluções completas para residências, comércios e indústrias. Experiência, estrutura própria e equipe especializada garantem atendimento ágil e confiável.</p>
+      <p>Ao longo de mais de quatro décadas, construímos uma trajetória marcada pela qualidade dos serviços, uso de peças originais e compromisso com a satisfação dos clientes, sempre acompanhando a evolução do mercado e das tecnologias.</p>
     </div>
   </div>
   <div class="lg:w-5/12">

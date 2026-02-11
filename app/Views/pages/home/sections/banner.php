@@ -14,10 +14,14 @@
       </div>
       <div class="mt-15">
         <div class="flex flex-col md:flex-row justify-between gap-10">
-          <button class="btn-secondary btn-lg" data-aos="zoom-in" data-aos-delay="300">Abrir um chamado</button>
-          <button class="btn-primary btn-lg" data-aos="zoom-in" data-aos-delay="400"><i class="flaticon-telephone"></i><?= config(\Config\App::class)->whatsapp ?></button>
+          <div data-aos="zoom-in" data-aos-delay="300">
+            <a href="<?= $appConfig->openTicketLink ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-lg">Abrir um chamado</a>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="400">
+            <button class="btn-secondary btn-lg w-full lg:w-auto">Conversar agora</button>
+          </div>
         </div>
-        <div class="text-end mt-5" data-aos="fade-up" data-aos-delay="500">(aos Sábados das 7h30 às 16h)</div>
+        <div class="text-center mt-5 text-xl" data-aos="fade-up" data-aos-delay="500">(7 dias por semana, 24h por dia)</div>
       </div>
     </div>
     <div class="overlay"></div>

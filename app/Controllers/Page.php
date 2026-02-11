@@ -4,8 +4,6 @@ namespace App\Controllers;
 
 class Page extends BaseController
 {
-  public function __construct() {}
-
   public function News()
   {
     return view(
@@ -34,10 +32,10 @@ class Page extends BaseController
     $postModel = new \App\Models\PostModel();
     $post = $postModel->metaTagData($type, $slug);
     if (null != $post) {
-      $image = config(\Config\App::class)->upload . "/images/thumb/" . $post->metaImage;
+      $image = $this->appConfig->upload . "/images/thumb/" . $post->metaImage;
       [$imageWidth, $imageHeight, $imageType] = getimagesize($image);
       return [
-        "metaTitle" => config(\Config\App::class)->name . " - " . $post->metaTitle,
+        "metaTitle" => $this->appConfig->name . " - " . $post->metaTitle,
         "metaDescription" => $post->metaDescription,
         "metaImage" => $image,
         "metaImageWidht" => $imageWidth,

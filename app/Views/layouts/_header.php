@@ -1,6 +1,17 @@
 <header>
     <div class="w-full bg-black py-3 text-center uppercase text-primary overflow-hidden">
-        <span class="block" data-aos="fade-up" data-aos-delay="500">Atendimento online <strong>24h/7</strong> dias por semana</span>
+        <span class="block" data-aos="fade-up" data-aos-delay="500">Atendimento online <strong>24h/7</strong> dias por semana / 
+            <i class="flaticon-telephone before:me-1 before:ms-1"></i> <strong><?= $appConfig->phone ?></strong>
+            <small>(
+                <?php if (!empty($appConfig->serviceHoursWeek)): ?>
+                    2ª às 6ª das  <?= esc($appConfig->serviceHoursWeek) ?>
+                <?php endif; ?>
+                <?php if (!empty($appConfig->serviceHoursSaturday)): ?>
+                    - sábados <?= esc($appConfig->serviceHoursSaturday) ?>
+                <?php endif; ?>
+                )
+            </small>
+        </span>
     </div>
     <div class="layout-container wide flex justify-between items-center py-10 gap-x-5">
         <div class="w-2/12">

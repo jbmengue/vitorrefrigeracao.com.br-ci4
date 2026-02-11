@@ -4,8 +4,7 @@ sections('home',
   [
     'banner',
     'services-bar',
-    'brands',
-    'services',
+    'needs',
     'about',
     'testimonials'
   ],

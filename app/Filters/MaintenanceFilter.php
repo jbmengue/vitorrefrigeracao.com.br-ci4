@@ -13,7 +13,7 @@ class MaintenanceFilter implements FilterInterface
 
   public function __construct()
   {
-    $this->appConfig = config(\Config\App::class);
+    $this->appConfig = appConfig();
     $this->session = \Config\Services::session();
   }
 

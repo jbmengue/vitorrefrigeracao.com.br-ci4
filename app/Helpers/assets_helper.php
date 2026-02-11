@@ -19,7 +19,7 @@ if (!function_exists("assets")) {
       $uri = implode("/", $uri);
     }
     $uri = trim($uri, "/");
-    $config = config(\Config\App::class);
+    $config = appConfig();
     $base =
       !empty($config->{$type}) && $config->{$type} !== "/"
         ? rtrim($config->{$type}, "/ ") . "/"

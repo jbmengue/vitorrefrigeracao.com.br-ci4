@@ -20,6 +20,10 @@
     @apply bg-secondary text-gray-900;
   }
 
+  .btn-tertiary {
+    @apply bg-tertiary text-gray-900;
+  }
+
   .btn-dark { @apply bg-black text-white before:bg-primary hover:!text-black; }
 
   .btn-sm {

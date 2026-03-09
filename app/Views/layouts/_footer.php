@@ -9,30 +9,33 @@
         <div>
           <div>
             <div class="flex flex-col lg:flex-row justify-start gap-x-10">
-              <a href="" class="btn-secondary btn-lg h-20 mb-5">
+              <a href="<?= $appConfig->openTicketLink ?>" class="btn-secondary btn-lg h-20 mb-5">
                 Abra um chamado
               </a>
-              <a href="" class="btn-secondary btn-lg h-20 mb-5">
+              <button type="button" class="btn-secondary btn-lg h-20 mb-5" onclick="<?= esc(whatsapp_conversion_onclick(), 'attr') ?>">
                 Conversar agora
-              </a>
+              </button>
             </div>
             <div class="text-xl text-white font-bold text-center">
-              <p>Atendimento 24h, todos os dias da semana</p>
+              <p>Atendimento online 24h/7 dias por semana</p>
             </div>
           </div>
         </div>
         <div>
-          <a href="" class="btn-primary btn-lg h-20 mb-5 lg:w-[350px] mx-auto">
-              <i class="flaticon-telephone"></i>
-              <?= $appConfig->phone ?>
-            </a>
+          <a href="tel:<?= $appConfig->phone ?>" class="btn-primary btn-lg h-20 mb-5 lg:w-[350px] mx-auto">
+            <i class="flaticon-telephone"></i>
+            <?= $appConfig->phone ?>
+          </a>
           <div class="text-xl text-white font-bold text-center">
             <?php if (!empty($appConfig->serviceHoursWeek)): ?>
-              <p class="m-0">Atendimento na semana das <?= esc($appConfig->serviceHoursWeek) ?></p>
+              <p class="m-0">
+                2ª às 6ª das <?= esc($appConfig->serviceHoursWeek) ?>
+                <?php if (!empty($appConfig->serviceHoursSaturday)): ?>
+                  - sábados das <?= esc($appConfig->serviceHoursSaturday) ?>
+                <?php endif; ?>
+              </p>
             <?php endif; ?>
-            <?php if (!empty($appConfig->serviceHoursSaturday)): ?>
-              <p class="m-0">Aos sábados das <?= esc($appConfig->serviceHoursSaturday) ?></p>
-            <?php endif; ?>
+            <p class="m-0"><?= esc($appConfig->email) ?></p>
           </div>
         </div>
       </div>
@@ -52,7 +55,7 @@
           <img alt="" title="" src="<?= assets('images', 'vitor-refrigeracao.png') ?>" />
         </div>
         <div data-aos="fade-up">
-          <img alt="" title="" src="<?= assets('images', 'smartfrio.png') ?>" />
+          <a href="https://smartfriors.com.br/" target="_blank" rel="noopener noreferrer"><img alt="" title="" src="<?= assets('images', 'smartfrio.png') ?>" /></a>
         </div>
       </div>
       <div class="flex flex-col lg:flex-row justify-center items-center gap-20 mb-30">
@@ -60,15 +63,29 @@
           <img alt="" title="" src="<?= assets('images', 'lg-center-service.png') ?>" />
         </div>
         <div data-aos="fade-up" data-aos-delay="200">
-          <img alt="" title="" src="<?= assets('images', 'multipartspoa-mercado-livre.png') ?>" />
+          <a href="https://www.mercadolivre.com.br/pagina/multipartspoa" target="_blank" rel="noopener noreferrer"><img alt="" title="" src="<?= assets('images', 'multipartspoa-mercado-livre.png') ?>" /></a>
         </div>
         
       </div>
 
       <?= cached_cell(App\Cells\Location\Footer::class) ?>
+      
+      <div class="text-center text-xl mt-20">
+        <strong>Atendimento online 24h/7 dias por semana</strong>
+        <?php if (!empty($appConfig->serviceHoursWeek)): ?>
+        <p class="m-0">
+          <strong><?= $appConfig->phone ?></strong><br /><small>(2ª às 6ª das <?= esc($appConfig->serviceHoursWeek) ?>
+          <?php if (!empty($appConfig->serviceHoursSaturday)): ?>
+            - sábados das <?= esc($appConfig->serviceHoursSaturday) ?>)</small>
+          <?php endif; ?>
+        </p>
+      <?php endif; ?>
+      <p class="m-0"><?= esc($appConfig->email) ?></p>
+      </div>
     </div>
 </section>
 <div class="bg-black text-center py-8 px-4 text-white mt-10">
   <?= $appConfig->name ?> - Desde 1983 - Todos os direitos reservados. Design e programação: <a href="//agencia-millenium.com" target="_blank" class="underline underline-offset-3">Studio Millenium</a>
 </div>
 </footer>
+<?php layout_snippet('whatsapp-floating-button') ?>

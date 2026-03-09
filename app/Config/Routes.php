@@ -20,7 +20,7 @@ use App\API\TechnicalServices;
  */
 $routes->get("/", [Home::class, "index"]);
 $routes->get("contato", [Contact::class, "index"]);
-$routes->get("news(:any)", [Page::class, "news"]);
+$routes->get('(assistencia-tecnica|autorizada)/(:segment)', 'Page::service/$1/$2');
 $routes->get("maintenance", [Maintenance::class, "index"]);
 
 $routes->group("api", ["namespace" => "App\API"], static function ($routes) {

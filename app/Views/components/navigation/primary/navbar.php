@@ -5,7 +5,7 @@
     </div>
     <nav>
       <ul class="xl:flex  justify-between">
-        <?= component("items", ['useShortLabel' => true, 'except' => ['commercial-refrigeration-gastronomy-equipment', 'gondolas', 'vrf', 'tailor-made-commercial-projects', 'equipment-rental']], 'navigation') ?>
+        <?= component("items", ['useShortLabel' => true, 'except' => ['commercial-refrigeration-gastronomy-equipment', 'gondolas', 'vrf', 'tailor-made-commercial-projects', 'equipment-rental', 'equipment-rental-air-quality']], 'navigation') ?>
       </ul>
     </nav>
   </div>

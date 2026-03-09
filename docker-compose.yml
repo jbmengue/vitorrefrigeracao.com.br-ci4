@@ -17,6 +17,7 @@ services:
       retries: 10
 
   app:
+    image: studio/ci4-app:php83
     build:
       context: .
       dockerfile: docker/php/Dockerfile
@@ -31,6 +32,7 @@ services:
         condition: service_healthy
 
   web:
+    image: studio/vitorrefrigeracao-ci4-web:apache24-v1
     build:
       context: .
       dockerfile: docker/apache/Dockerfile

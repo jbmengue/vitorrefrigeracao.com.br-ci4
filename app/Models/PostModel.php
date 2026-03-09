@@ -122,24 +122,6 @@ final class PostModel extends Model
     });
   }
 
-  public function metaTagData(string $type, string $slug): ?object
-  {
-    $this->byType($type)->bySlug($slug);
-
-    return $this->withQuery(function (self $model) {
-      return $model
-        ->select("
-              {$this->table}.title as metaTitle,
-              {$this->table}.subtitle as metaDescription,
-              files.name as metaImage,
-              files.name as metaImageExtension
-          ", false)
-        ->orderBy($this->table . '.id', 'DESC')
-        ->groupBy($this->table . '.id')
-        ->first();
-    });
-  }
-
   public function reorder(int $id, int $order): bool
   {
     return (bool) $this->set(['order' => $order])

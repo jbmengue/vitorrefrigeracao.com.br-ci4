@@ -18,7 +18,7 @@
             <a href="<?= $appConfig->openTicketLink ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-lg">Abrir um chamado</a>
           </div>
           <div data-aos="zoom-in" data-aos-delay="400">
-            <button class="btn-secondary btn-lg w-full lg:w-auto">Conversar agora</button>
+            <button class="btn-secondary btn-lg w-full lg:w-auto" onclick="<?= esc(whatsapp_conversion_onclick(), 'attr') ?>">Conversar agora</button>
           </div>
         </div>
         <div class="text-center mt-5 text-xl" data-aos="fade-up" data-aos-delay="500">(7 dias por semana, 24h por dia)</div>

@@ -19,4 +19,5 @@ App URLs:
 - Development commands: `docs/commands.md`
 - Production procedures: `docs/production-procedures.md`
 - Frontend structure: `docs/frontend-structure.md`
+- Conventions (CodeIgniter, scripts, CSS): `docs/conventions.md`
 - CodeIgniter 4 documentation: https://codeigniter4.github.io/userguide/

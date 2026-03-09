@@ -32,3 +32,15 @@ resources/css
 ├── icons/              # Icon font and icon styles
 └── vendor/             # Third-party library styles
 ```
+
+## Views Structure (`app/Views`)
+
+```text
+app/Views
+├── layouts/
+│   └── snippets/       # Reusable layout partials (head, scripts, brand, etc.)
+└── pages/
+    └── <page>/
+        ├── index.php   # Page entry view
+        └── sections/   # Page-specific sections/blocks
+```

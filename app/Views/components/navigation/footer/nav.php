@@ -7,7 +7,7 @@
       <?php component("items", ['only' => ['authorized'], 'navItemClass' => 'mb-5', 'navLinkClass' => 'font-bold'], 'navigation') ?>
     </ul>
     <ul class="text-center lg:text-start">
-      <?php component("items", ['only' => ['gas-heaters', 'commercial-refrigeration-gastronomy-equipment', 'gondolas', 'vrf', 'tailor-made-commercial-projects', 'equipment-rental'], 'navItemClass' => 'mb-5', 'navLinkClass' => 'font-bold'], 'navigation') ?>
+      <?php component("items", ['only' => ['gas-heaters', 'commercial-refrigeration-gastronomy-equipment', 'vrf', 'tailor-made-commercial-projects', 'equipment-rental-air-quality'], 'navItemClass' => 'mb-5', 'navLinkClass' => 'font-bold'], 'navigation') ?>
       <li>
         <strong>Siga-nos nas redes</strong>
         <div class="flex justify-center lg:justify-start gap-x-3 mt-5">

@@ -16,6 +16,22 @@ $only = $only ?? null;
 $except = $except ?? null;
 $order = $order ?? null;
 
+$isExternalUrl = static function (?string $route): bool {
+    if ($route === null) {
+        return false;
+    }
+
+    return str_starts_with($route, 'http://') || str_starts_with($route, 'https://');
+};
+
+$buildHref = static function (?string $route) use ($isExternalUrl): string {
+    if ($route === null || $route === '') {
+        return '#';
+    }
+
+    return $isExternalUrl($route) ? $route : site_url($route);
+};
+
 
 if (is_array($except) && ! empty($except)) {
     $items = array_filter(
@@ -75,7 +91,7 @@ foreach ($items as $item):
     ?>
     <li class="nav-item <?= esc($navItemClass, 'attr') ?> <?= $hasChildren ? 'has-children' : '' ?> <?= $isActive ? 'is-active' : '' ?>">
         <?php if ($item->route !== null): ?>
-            <a href="<?= site_url($item->route) ?>" class="nav-link <?= esc($navLinkClass, 'attr') ?>">
+            <a href="<?= esc($buildHref($item->route), 'attr') ?>" class="nav-link <?= esc($navLinkClass, 'attr') ?>">
                 <?= esc($item->getLabel($useShortLabel)) ?>
             </a>
         <?php else: ?>
@@ -96,7 +112,7 @@ foreach ($items as $item):
                     }
                     ?>
                     <li class="nav-subitem <?= $childIsActive ? 'is-active' : '' ?>">
-                        <a href="<?= site_url($child->route ?? '#') ?>" class="nav-sublink hover:underline hover:underline-offset-4 <?= esc($submenuNavLinkClass, 'attr') ?>">
+                        <a href="<?= esc($buildHref($child->route), 'attr') ?>" class="nav-sublink hover:underline hover:underline-offset-4 <?= esc($submenuNavLinkClass, 'attr') ?>">
                             <?= esc($child->getLabel($useShortLabel)) ?>
                         </a>
                     </li>

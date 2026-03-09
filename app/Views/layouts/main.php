@@ -10,6 +10,7 @@
 
         <main>
             <?= $this->renderSection("content") ?>
+            <?= component('testimonials') ?>
         </main>
 
         <?php layout("footer"); ?>

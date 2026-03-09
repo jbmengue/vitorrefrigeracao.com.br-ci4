@@ -1,19 +1,6 @@
 <?php
-if (!function_exists("load_css_page")) {
-  function load_css_page($page): string
-  {
-    if (file_exists(FCPATH . "assets/css/pages/" . $page . "/" . $page . ".page.css")) {
-      return '<link rel="stylesheet" href="' .
-        assets("css", "pages/" . $page . "/" . $page . ".page.css") .
-        '">';
-    }
-
-    return "";
-  }
-}
-
 if (!function_exists("assets")) {
-  function assets(string $type = "", $uri = "", string $protocol = null): string
+  function assets(string $type = "", $uri = "", ?string $protocol = null): string
   {
     if (is_array($uri)) {
       $uri = implode("/", $uri);

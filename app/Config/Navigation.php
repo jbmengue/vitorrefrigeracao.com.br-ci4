@@ -80,67 +80,67 @@ class Navigation extends BaseConfig
                     new NavItem(
                         key: 'maintenance-contract-condominiums',
                         label: 'Instalação de aquecedores',
-                        route: '/contato',
+                        route: 'https://vitorrefrigeracao.com.br/site/servicos/instal-aquecedor',
                     ),
                     new NavItem(
                         key: 'pmoc',
                         label: 'Instalação de ar condicionado',
-                        route: '/contato',
+                        route: 'https://vitorrefrigeracao.com.br/site/servicos/instalacao/',
                     ),
                     new NavItem(
                         key: 'pmoc',
                         label: 'Instalação de eletrodomésticos',
-                        route: '/contato',
+                        route: 'https://vitorrefrigeracao.com.br/site/servicos/instalacao-eletrodomesticos/',
                     ),
                     new NavItem(
                         key: 'pmoc',
                         label: 'Instalação de TV',
-                        route: '/contato',
+                        route: 'https://vitorrefrigeracao.com.br/site/servicos/instalacao-tv',
                     ),
                 ],
             ),
             new NavItem(
                 key: 'cleaning',
                 label: 'Limpeza',
-                route: '/contato',
+                route: '#',
                 children: [
                     new NavItem(
                         key: 'maintenance-contract-condominiums',
                         label: 'Limpeza de ar split',
-                        route: '/contato',
+                        route: 'https://vitorrefrigeracao.com.br/site/servicos/limpeza-ar-split/',
                     ),
                     new NavItem(
                         key: 'pmoc',
                         label: 'Laudo de limpeza',
-                        route: '/contato',
+                        route: 'https://vitorrefrigeracao.com.br/site/qualidade-do-ar/',
                     ),
                     new NavItem(
                         key: 'pmoc',
                         label: 'Qualidade do ar',
-                        route: '/contato',
+                        route: 'https://vitorrefrigeracao.com.br/site/qualidade-do-ar/',
                     ),
                     new NavItem(
                         key: 'pmoc',
                         label: 'Limpeza de Equipamentos',
-                        route: '/contato',
+                        route: 'https://vitorrefrigeracao.com.br/site/servicos/limpeza-equipamentos',
                     ),
                 ],
             ),
             new NavItem(
                 key: 'air-conditioning',
                 label: 'Ar condicionado',
-                route: '/contato',
+                route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
             ),
             new NavItem(
                 key: 'gas-heaters',
                 label: 'Aquecedores à gás',
                 shortLabel: 'Aquecedores',
-                route: '/contato',
+                route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
             ),
             new NavItem(
                 key: 'parts',
                 label: 'Peças',
-                route: '/contato',
+                route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
             ),
             new NavItem(
                 key: 'contracts',
@@ -150,108 +150,103 @@ class Navigation extends BaseConfig
                     new NavItem(
                         key: 'maintenance-contract-condominiums',
                         label: 'Contrato de manutenção para condomínios',
-                        route: '/contato',
+                        route: 'https://vitorrefrigeracao.com.br/site/servicos/condominios',
                     ),
                     new NavItem(
                         key: 'pmoc',
                         label: 'Contrato de manutenção PMOC',
-                        route: '/contato',
+                        route: 'https://vitorrefrigeracao.com.br/site/servicos/contratos-de-manutencao',
                     ),
                 ],
             ),
             new NavItem(
                 key: 'equipment',
                 label: 'Equipamentos',
-                route: '/contato',
+                route: '#',
+                children: [
+                    new NavItem(
+                        key: 'equipment-01',
+                        label: 'Câmaras frigoríficas',
+                        route: 'https://vitorrefrigeracao.com.br/site/servicos/camaras-frigorificas',
+                    ),
+                    new NavItem(
+                        key: 'equipment-02',
+                        label: 'Projetos comerciais',
+                        route: 'https://vitorrefrigeracao.com.br/site/servicos/projetos-comerciais/',
+                    ),
+                    new NavItem(
+                        key: 'equipment-03',
+                        label: 'Loja virtual',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
+                    ),
+                    new NavItem(
+                        key: 'equipment-04',
+                        label: 'Catálogos',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
+                    ),
+                ]
             ),
             new NavItem(
                 key: 'commercial-refrigeration-gastronomy-equipment',
                 label: 'Refrigeração comercial e equipamentos de gastronomia',
-                route: '/contato',
+                route: '#',
                 children: [
-                    new NavItem(
-                        key: 'commercial-refrigeration-gastronomy-equipment-equipment-rental',
-                        label: 'Locação de equipamentos',
-                        route: '/servicos/locacao',
-                    ),
                     new NavItem(
                         key: 'self-services-visa-coolers',
                         label: 'Autosserviços e visa coolers',
-                        route: '/servicos/administracao',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
                     ),
                     new NavItem(
                         key: 'dry-refrigerated-counters',
                         label: 'Balcões secos e refrigerados',
-                        route: '/servicos/consultoria',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
                     ),
                     new NavItem(
                         key: 'industrial-kitchen-line',
                         label: 'Linha cozinha industrial',
-                        route: '/servicos/consultoria',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
                     ),
                     new NavItem(
                         key: 'butcher-shop-line',
                         label: 'Linha açougue',
-                        route: '/servicos/consultoria',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
                     ),
                     new NavItem(
                         key: 'bakery-bakery-line',
                         label: 'Linha padaria e panificação',
-                        route: '/servicos/consultoria',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
                     ),
                     new NavItem(
                         key: 'commercial-mini-chambers-refrigerators',
                         label: 'Mini-câmaras e geladeiras comerciais',
-                        route: '/servicos/consultoria',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
                     ),
                     new NavItem(
                         key: 'display-gondolas',
                         label: 'Gondolas expositores',
-                        route: '/servicos/consultoria',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
                     ),
                     new NavItem(
                         key: 'refrigerated-islands-freezers',
                         label: 'Ilhas refrigeradas e freezers',
-                        route: '/servicos/consultoria',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
                     ),
                     new NavItem(
                         key: 'dry-and-heated-display-cases',
                         label: 'Vitrines secas e aquecidas',
-                        route: '/servicos/consultoria',
+                        route: 'https://www.mercadolivre.com.br/pagina/multipartspoa',
                     ),
                 ],
-            ),
-            new NavItem(
-                key: 'gondolas',
-                label: 'Gondolas',
-                route: '/contato',
             ),
             new NavItem(
                 key: 'vrf',
                 label: 'VRF',
-                route: '/contato',
+                route: 'https://vitorrefrigeracao.com.br/site/servicos/solucao-vrf/',
             ),
             new NavItem(
-                key: 'tailor-made-commercial-projects',
-                label: 'Projetos comerciais sob medida',
-                route: '/contato',
-            ),
-            new NavItem(
-                key: 'equipment-rental',
-                label: 'Locação de equipamentos',
-                route: '/contato',
-                children: [
-                    new NavItem(
-                        key: 'equipment-rental-vrf',
-                        label: 'VRF',
-                        route: '/contato',
-                    ),
-                    new NavItem(
-                        key: 'equipment-rental-air-quality',
-                        label: 'Qualidade do ar',
-                        route: '/contato',
-                    ),
-                ],
+                key: 'equipment-rental-air-quality',
+                label: 'Qualidade do ar',
+                route: 'https://vitorrefrigeracao.com.br/site/qualidade-do-ar/',
             ),
         ];
     }

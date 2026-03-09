@@ -38,6 +38,7 @@ class App extends BaseConfig
 
   public string $images = "";
   public string $upload = "";
+  public string $icons = "";
   public string $css = "";
   public string $js = "";
   public string $googleMapsAPI = "";

@@ -1,8 +1,10 @@
 <header>
-    <div class="w-full bg-black py-3 text-center uppercase text-primary overflow-hidden">
-        <span class="block" data-aos="fade-up" data-aos-delay="500">Atendimento online <strong>24h/7</strong> dias por semana / 
-            <i class="flaticon-telephone before:me-1 before:ms-1"></i> <strong><?= $appConfig->phone ?></strong>
-            <small>(
+    <div class="w-full bg-black py-3 px-5 text-center uppercase text-primary overflow-hidden">
+        <span class="block" data-aos="fade-up" data-aos-delay="500">Atendimento online <strong>24h/7</strong> dias por semana <span class="max-lg:hidden">/</span> 
+            <span class="max-lg:block">
+                <i class="flaticon-telephone before:me-1 before:ms-1"></i> <strong><?= $appConfig->phone ?></strong>
+            </span>
+            <small class="max-md:block">(
                 <?php if (!empty($appConfig->serviceHoursWeek)): ?>
                     2ª às 6ª das  <?= esc($appConfig->serviceHoursWeek) ?>
                 <?php endif; ?>

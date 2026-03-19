@@ -52,18 +52,18 @@
       </h1>
       <div class="flex flex-col lg:flex-row justify-center items-center gap-20 mb-30">
         <div data-aos="fade-up">
-          <img alt="" title="" src="<?= assets('images', 'vitor-refrigeracao.png') ?>" />
+          <img alt="" title="" src="<?= assets('images', 'vitor-refrigeracao.png') ?>" width="266" height="90" decoding="async" />
         </div>
         <div data-aos="fade-up">
-          <a href="https://smartfriors.com.br/" target="_blank" rel="noopener noreferrer"><img alt="" title="" src="<?= assets('images', 'smartfrio.png') ?>" /></a>
+          <a href="https://smartfriors.com.br/" target="_blank" rel="noopener noreferrer"><img alt="" title="" src="<?= assets('images', 'smartfrio.png') ?>" width="286" height="62" decoding="async" /></a>
         </div>
       </div>
       <div class="flex flex-col lg:flex-row justify-center items-center gap-20 mb-30">
         <div data-aos="fade-up" data-aos-delay="400">
-          <img alt="" title="" src="<?= assets('images', 'lg-center-service.png') ?>" />
+          <img alt="" title="" src="<?= assets('images', 'lg-center-service.png') ?>" width="348" height="47" decoding="async" />
         </div>
         <div data-aos="fade-up" data-aos-delay="200">
-          <a href="https://www.mercadolivre.com.br/pagina/multipartspoa" target="_blank" rel="noopener noreferrer"><img alt="" title="" src="<?= assets('images', 'multipartspoa-mercado-livre.png') ?>" /></a>
+          <a href="https://www.mercadolivre.com.br/pagina/multipartspoa" target="_blank" rel="noopener noreferrer"><img alt="" title="" src="<?= assets('images', 'multipartspoa-mercado-livre.png') ?>" width="612" height="67" decoding="async" /></a>
         </div>
         
       </div>

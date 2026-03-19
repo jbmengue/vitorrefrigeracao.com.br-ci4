@@ -4,6 +4,6 @@
     <div class="text-2xl" data-aos="fade-up" data-aos-delay="300">A <?= $appConfig->name ?> pelos olhos de vocês</div>
   </div>
   <div class="mt-15">
-    <div class="testimonials-slider"></div>
+    <div class="testimonials-slider" style="min-height: clamp(420px, 50vh, 640px);"></div>
   </div>
 </section>

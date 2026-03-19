@@ -2,8 +2,11 @@
   <img
     src="<?= assets('images', 'banners/main-banner/bg.jpg') ?>"
     alt=""
+    width="2500"
+    height="1090"
     class="absolute inset-0 h-full w-full object-cover"
     loading="eager"
+    fetchpriority="high"
   />
   <div class="wrapper">
     <div class="layout-container wide relative flex flex-col md:justify-center md:items-end h-full text-center md:text-end z-20 py-15 md:py-0">

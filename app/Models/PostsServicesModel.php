@@ -108,30 +108,27 @@ final class PostsServicesModel extends Model
       p.active,
       (
         SELECT COALESCE(
-          JSON_ARRAYAGG(
-            JSON_OBJECT(
-              'id', ordered_products.id,
-              'icon', ordered_products.icon,
-              'label', ordered_products.label,
-              'order', ordered_products.sort_order
-            )
+          CONCAT(
+            '[',
+            GROUP_CONCAT(
+              JSON_OBJECT(
+                'id', sp.id,
+                'icon', sp.icon,
+                'label', sp.label,
+                'order', sp.`order`
+              )
+              ORDER BY sp.`order` ASC, sp.id ASC
+              SEPARATOR ','
+            ),
+            ']'
           ),
           JSON_ARRAY()
         )
-        FROM (
-          SELECT
-            psp.post AS post_id,
-            sp.id,
-            sp.icon,
-            sp.label,
-            sp.`order` AS sort_order
-          FROM posts_services_products psp
-          INNER JOIN service_products sp ON sp.id = psp.product
-          WHERE sp.deleted_at IS NULL
-            AND sp.active = 1
-          ORDER BY sp.`order` ASC, sp.id ASC
-        ) AS ordered_products
-        WHERE ordered_products.post_id = ps.post
+        FROM posts_services_products psp
+        INNER JOIN service_products sp ON sp.id = psp.product
+        WHERE psp.post = ps.post
+          AND sp.deleted_at IS NULL
+          AND sp.active = 1
       ) AS products,
       (
         SELECT COALESCE(

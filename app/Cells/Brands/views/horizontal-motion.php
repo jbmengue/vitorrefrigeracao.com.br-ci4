@@ -7,8 +7,8 @@
         foreach ($brands as $key => $brand):
           $alt = esc($brand->relationshipLabel() . ': ' . $brand->title);
         ?>
-          <div class="item">
-            <img alt="<?= $alt ?>" title="<?= $alt ?>" src="<?= esc(assets('images', "logos/{$brand->name}/colorful.png")) ?>" loading="lazy" class="max-w-[250px] max-h-[200px]" />
+          <div class="item flex h-[120px] w-[250px] items-center justify-center">
+            <img alt="<?= $alt ?>" title="<?= $alt ?>" src="<?= esc(assets('images', "logos/{$brand->name}/colorful.png")) ?>" width="250" height="120" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain" />
           </div>
         <?php endforeach; ?>
       </div>

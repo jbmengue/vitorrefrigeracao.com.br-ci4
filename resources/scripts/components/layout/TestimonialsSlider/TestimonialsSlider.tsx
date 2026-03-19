@@ -45,7 +45,7 @@ const TestimonialSlider = () => {
   }, [posts]);
 
   return (
-    <div className="relative">
+    <div className="relative min-h-[420px]">
       <Swiper
         modules={[Pagination]}
         spaceBetween={24}
@@ -86,8 +86,11 @@ const TestimonialSlider = () => {
                     alt={`Depoimento: ${post.title}`}
                     title={`Depoimento: ${post.title}`}
                     src={app.assets.images(`logos/${post.reference}/colorful.png`)}
+                    width={56}
+                    height={56}
                     loading="lazy"
                     decoding="async"
+                    className="h-14 w-14 object-contain"
                   />
                 </div>
                 <div className="px-15 pt-8 text-center">
@@ -97,7 +100,16 @@ const TestimonialSlider = () => {
                   </div>
                 </div>
                 <div className="absolute bottom-10 left-0 w-full">
-                  <img alt="" title="" src={app.assets.images('stars.png')} className="mx-auto" />
+                  <img
+                    alt=""
+                    title=""
+                    src={app.assets.images('stars.png')}
+                    width={90}
+                    height={16}
+                    loading="lazy"
+                    decoding="async"
+                    className="mx-auto"
+                  />
                 </div>
               </div>
             </SwiperSlide>

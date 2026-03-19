@@ -4,7 +4,8 @@
         url("/assets/icons/flaticon/font/flaticon_vitorrefrigeracaocombr.woff?6e9f723d52c57e005b2af8d5e9b39663") format("woff"),
         url("/assets/icons/flaticon/font/flaticon_vitorrefrigeracaocombr.eot?6e9f723d52c57e005b2af8d5e9b39663#iefix") format("embedded-opentype"),
         url("/assets/icons/flaticon/font/flaticon_vitorrefrigeracaocombr.ttf?6e9f723d52c57e005b2af8d5e9b39663") format("truetype"),
-        url("/assets/icons/flaticon/font/flaticon_vitorrefrigeracaocombr.svg?6e9f723d52c57e005b2af8d5e9b39663#flaticon_vitorrefrigeracaocombr") format("svg")
+        url("/assets/icons/flaticon/font/flaticon_vitorrefrigeracaocombr.svg?6e9f723d52c57e005b2af8d5e9b39663#flaticon_vitorrefrigeracaocombr") format("svg");
+    font-display: swap;
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {

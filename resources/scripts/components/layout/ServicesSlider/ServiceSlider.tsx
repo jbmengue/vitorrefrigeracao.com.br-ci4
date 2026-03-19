@@ -47,7 +47,7 @@ const ServicesSlider = () => {
   }, [services]);
 
   return (
-    <div className="relative">
+    <div className="relative min-h-[540px]">
       <Swiper
         modules={[Navigation]}
         spaceBetween={25}

@@ -1,7 +1,7 @@
 <section class="pt-20 bg-[#fff4ec] mb-25">
   <div class="layout-container flex flex-col xl:flex-row justify-center items-center xl:items-end gap-x-25">
     <div class="order-2 xl:order-1">
-      <img alt="" title="" src="<?= assets('images', 'figures/01.png') ?>" />
+      <img alt="" title="" src="<?= assets('images', 'figures/01.png') ?>" width="517" height="471" decoding="async" class="h-auto w-full max-w-[517px]" />
     </div>
     <div class="order-1 xl:order-2">
       <div class="text-center xl:text-start">

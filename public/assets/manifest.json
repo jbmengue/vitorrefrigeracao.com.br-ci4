@@ -1,6 +1,10 @@
 {
-  "_api-BQVmo7Ho.js": {
-    "file": "js/api-BQVmo7Ho.js",
+  "_api-C8ec8cn4.css": {
+    "file": "css/api-C8ec8cn4.css",
+    "src": "_api-C8ec8cn4.css"
+  },
+  "_api-CXu_Mg3F.js": {
+    "file": "js/api-CXu_Mg3F.js",
     "name": "api",
     "imports": [
       "resources/scripts/main.tsx"
@@ -9,12 +13,8 @@
       "css/api-C8ec8cn4.css"
     ]
   },
-  "_api-C8ec8cn4.css": {
-    "file": "css/api-C8ec8cn4.css",
-    "src": "_api-C8ec8cn4.css"
-  },
   "resources/scripts/components/layout/OffcanvasMenu/index.ts": {
-    "file": "js/index-qORNd5N9.js",
+    "file": "js/index-C98asvTa.js",
     "name": "index",
     "src": "resources/scripts/components/layout/OffcanvasMenu/index.ts",
     "isDynamicEntry": true,
@@ -23,30 +23,30 @@
     ]
   },
   "resources/scripts/components/layout/ServicesSlider/index.ts": {
-    "file": "js/index-Dkbl5SAl.js",
+    "file": "js/index-CKQ2LV7_.js",
     "name": "index",
     "src": "resources/scripts/components/layout/ServicesSlider/index.ts",
     "isDynamicEntry": true,
     "imports": [
       "resources/scripts/main.tsx",
-      "_api-BQVmo7Ho.js"
+      "_api-CXu_Mg3F.js"
     ]
   },
   "resources/scripts/components/layout/TestimonialsSlider/index.ts": {
-    "file": "js/index-DE2c-Y_7.js",
+    "file": "js/index-DsTc3k1Q.js",
     "name": "index",
     "src": "resources/scripts/components/layout/TestimonialsSlider/index.ts",
     "isDynamicEntry": true,
     "imports": [
       "resources/scripts/main.tsx",
-      "_api-BQVmo7Ho.js"
+      "_api-CXu_Mg3F.js"
     ],
     "css": [
       "css/index-BSlPwyae.css"
     ]
   },
   "resources/scripts/main.tsx": {
-    "file": "js/main-BS6U367K.js",
+    "file": "js/main-BIjot6aa.js",
     "name": "main",
     "src": "resources/scripts/main.tsx",
     "isEntry": true,
@@ -56,7 +56,7 @@
       "resources/scripts/components/layout/TestimonialsSlider/index.ts"
     ],
     "css": [
-      "css/main-BOtTqoXU.css"
+      "css/main-BzpVtPB0.css"
     ]
   }
 }

@@ -32,7 +32,7 @@ services:
         condition: service_healthy
 
   web:
-    image: studio/vitorrefrigeracao-ci4-web:apache24-v1
+    image: studio/vitorsolucoes-web:apache24-v1
     build:
       context: .
       dockerfile: docker/apache/Dockerfile

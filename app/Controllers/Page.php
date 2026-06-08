@@ -51,7 +51,7 @@ class Page extends BaseController
   private function buildMetaTagsFromService(PostsServices $service): array
   {
     $meta = [
-      'metaTitle' => $this->appConfig->name . ' - ' . (string) ($service->title ?? ''),
+      'metaTitle' =>  (string) ($service->title ?? '') . ' | ' . $this->appConfig->name,
       'metaDescription' => (string) ($service->subtitle ?? ''),
     ];
 

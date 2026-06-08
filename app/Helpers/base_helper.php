@@ -71,6 +71,51 @@ if (! function_exists('section')) {
     }
 }
 
+if (! function_exists('render_content_if_exists')) {
+    function render_content_if_exists(
+        ?string $content,
+        string $type,
+        array $data = [],
+        string $dir = '',
+    ): bool
+    {
+        $content = trim((string) $content);
+        $type = trim($type);
+        $dir = trim($dir, '/');
+
+        if ($content === '') {
+            return true;
+        }
+
+        $prefix = 'view:' . $type . ':';
+
+        if (! str_starts_with($content, $prefix)) {
+            return false;
+        }
+
+        $identifier = trim(substr($content, strlen($prefix)));
+
+        $isValidToken = static fn (string $value): bool => preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*$/', $value) === 1;
+        $isValidDir = static fn (string $value): bool => $value === ''
+            || preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*(?:\/[a-z0-9]+(?:-[a-z0-9]+)*)*$/', $value) === 1;
+
+        if (! $isValidToken($type) || ! $isValidToken($identifier) || ! $isValidDir($dir)) {
+            return true;
+        }
+
+        $relativePath = 'pages/' . $type . '/sections/' . ($dir !== '' ? $dir . '/' : '') . $identifier;
+        $viewFile = APPPATH . 'Views/' . $relativePath . '.php';
+
+        if (! is_file($viewFile)) {
+            return true;
+        }
+
+        section($type, $identifier, $data, $dir);
+
+        return true;
+    }
+}
+
 if (! function_exists('sections')) {
     function sections(string $page, array $sections = [], array $data = [], string $dir = ''): void
     {

@@ -9,8 +9,10 @@ $serviceColor = preg_match('/^[A-Fa-f0-9]{6}$|^[A-Fa-f0-9]{3}$/', $rawColor)
 sections('service', [
   'banner',
   'same-day-service',
+  'content',
   'products',
   'works',
+  'open-ticket-link',
   'request-you-service'
 ]);
 ?>

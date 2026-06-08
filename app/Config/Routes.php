@@ -4,7 +4,6 @@ use CodeIgniter\Router\RouteCollection;
 
 use App\Controllers\Home;
 use App\Controllers\Contact;
-use App\Controllers\Page;
 use App\Controllers\Maintenance;
 
 use App\API\Authentication;

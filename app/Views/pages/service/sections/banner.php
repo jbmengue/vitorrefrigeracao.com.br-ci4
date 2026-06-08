@@ -1,8 +1,14 @@
 <div class="relative overflow-x-hidden">
   <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center z-1">
     <div class="text-center">
-      <img alt="" title="" src="<?= $appConfig->upload ?>/images/large/<?= $post->logoName ?>" class="block mx-auto mb-8 max-w-[75%] lg:max-w-2xl" />
-      <h1 class="font-normal text-4xl normal-case"><?= $post->phrase ?></h1>
+      <?php
+      $classPhrase = 'font-bold text-6xl normal-case max-w-[750px] mx-auto';
+      if(!empty($post->logoName)): 
+        $classPhrase = 'font-normal text-4xl normal-case'; 
+      ?>
+        <img alt="" title="" src="<?= $appConfig->upload ?>/images/large/<?= $post->logoName ?>" class="block mx-auto mb-8 max-w-[75%] lg:max-w-2xl" />
+      <?php endif ?>
+      <h1 class="<?= $classPhrase ?>"><?= $post->phrase ?></h1>
       <div class="lg:mt-20">
         <div class="flex flex-wrap justify-center items-center gap-x-10  gap-y-5">
           <a href="<?= $appConfig->openTicketLink ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-lg">Abrir um chamado</a>

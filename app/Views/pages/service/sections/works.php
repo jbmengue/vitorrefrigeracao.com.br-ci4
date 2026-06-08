@@ -1,3 +1,5 @@
+<?php 
+if ($post->works): ?>
 <section>
   <div class="layout-container">
     <h1 class="font-bold uppercase text-center text-[var(--service-color)] mb-20">Serviços que realizamos</h1>
@@ -12,9 +14,6 @@
         </div>
       <?php endforeach; ?>
     </div>
-
-    <div class="flex justify-center my-20 md:my-35">
-      <a href="<?= $appConfig->openTicketLink ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-lg inline-block text-white text-sm md:text-xl">Abrir um chamado agora</a>
-    </div>
   </div>
 </section>
+<?php endif;

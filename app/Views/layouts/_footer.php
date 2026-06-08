@@ -65,27 +65,30 @@
         <div data-aos="fade-up" data-aos-delay="200">
           <a href="https://www.mercadolivre.com.br/pagina/multipartspoa" target="_blank" rel="noopener noreferrer"><img alt="" title="" src="<?= assets('images', 'multipartspoa-mercado-livre.png') ?>" width="612" height="67" decoding="async" /></a>
         </div>
-        
+
       </div>
 
       <?= cached_cell(App\Cells\Location\Footer::class) ?>
-      
+
       <div class="text-center text-xl mt-20">
         <strong>Atendimento online 24h/7 dias por semana</strong>
         <?php if (!empty($appConfig->serviceHoursWeek)): ?>
-        <p class="m-0">
-          <strong><?= $appConfig->phone ?></strong><br /><small>(2ª às 6ª das <?= esc($appConfig->serviceHoursWeek) ?>
-          <?php if (!empty($appConfig->serviceHoursSaturday)): ?>
-            - sábados das <?= esc($appConfig->serviceHoursSaturday) ?>)</small>
+          <p class="m-0">
+            <strong><?= $appConfig->phone ?></strong><br /><small>(2ª às 6ª das <?= esc($appConfig->serviceHoursWeek) ?>
+              <?php if (!empty($appConfig->serviceHoursSaturday)): ?>
+                - sábados das <?= esc($appConfig->serviceHoursSaturday) ?>)</small>
           <?php endif; ?>
-        </p>
-      <?php endif; ?>
-      <p class="m-0"><?= esc($appConfig->email) ?></p>
+          </p>
+        <?php endif; ?>
+        <p class="m-0"><?= esc($appConfig->email) ?></p>
+      </div>
+      <div id="ra-verified-seal" class="flex justify-center mt-15">
+        <script type="text/javascript" id="ra-embed-verified-seal" src="https://s3.amazonaws.com/raichu-beta/ra-verified/bundle.js" data-id="dW5JQ0RST0pFQ3BXbHI5ODp2aXRvci1zb2x1Y29lcw==" data-target="ra-verified-seal" data-model="compact_1"></script>
       </div>
     </div>
-</section>
-<div class="bg-black text-center py-8 px-4 text-white mt-10">
-  <?= $appConfig->name ?> - Desde 1983 - Todos os direitos reservados. Design e programação: <a href="//agencia-millenium.com" target="_blank" class="underline underline-offset-3">Studio Millenium</a>
-</div>
+  </section>
+  <div class="bg-black text-center py-8 px-4 text-white mt-10">
+    <?= $appConfig->name ?> - Desde 1983 - Todos os direitos reservados. Design e programação: <a href="//agencia-millenium.com" target="_blank" class="underline underline-offset-3">Studio Millenium</a>
+  </div>
 </footer>
 <?php layout_snippet('whatsapp-floating-button') ?>
